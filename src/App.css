@@ -1,38 +1,64 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+div {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
+}
+
+.background {
+  position: absolute;
+  margin-top: 80px;
+  width: 95%;
+  z-index: 1
+}
+
+#fact {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  position: fixed;
+  margin-top: 100px;
+  width: 80%;
+  font-size: 3vw;
+  z-index: 2;
+  color: rebeccapurple;
 }
 
-.App-link {
-  color: #61dafb;
+.animals {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  width: 90%;
+  margin-top: 240px;
+  z-index: 2
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.animal {
+  width: 33.3%;
+}
+
+@media only screen and (max-width: 670px) {
+  .animals {
+    margin-top: 180px;
   }
-  to {
-    transform: rotate(360deg);
+
+  h1 {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .animals {
+    margin-top: 150px;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .animals {
+    margin-top: 130px;
+  }
+}
+
+@media only screen and (max-width: 200px) {
+  .animals {
+    margin-top: 120px;
   }
 }
